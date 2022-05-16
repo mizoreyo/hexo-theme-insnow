@@ -63,46 +63,6 @@ html
 .article-details a
   text-decoration: none
 
-.catalogs-container
-  position: sticky
-  top: 0
-  z-index: 999
-  pointer-events: none
-
-.cata-fold-switch-container
-  display: flex
-  flex-direction: row-reverse
-.cata-fold-switch
-  width: 5rem
-  height: 5rem
-  display: flex
-  align-items: center
-  justify-content: center
-  background-color: #fff
-  pointer-events: auto
-.cata-fold-switch i
-  cursor: pointer
-
-.toc-item::marker
-  content: none
-
-.toc
-  position: relative
-  pointer-events: auto
-
-.toc-container
-  overflow: hidden
-  transition: 0.25s
-  background-color: #fff
-
-.toc a
-  text-decoration: none
-  font-size: 1.4rem
-
-.toc-child
-  position: relative
-  left: 2rem
-
 a[class^='tag-']
   text-decoration: none
   padding: 0.25rem
@@ -125,6 +85,7 @@ a[class^='tag-']
 .category-list-count
   font-size: 1.6rem
   font-family: 'Noto Sans SC', sans-serif
+
 
 @import '../_partial/header.styl'
 @import '../_partial/article.styl'
