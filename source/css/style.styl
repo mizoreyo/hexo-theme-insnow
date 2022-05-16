@@ -1,0 +1,130 @@
+html
+  font-size: 62.5%
+
+* 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  outline: none
+  border: none
+
+.main-body a
+  color: rgb(45, 136, 233)
+.main-body a:active
+  color: rgb(19, 110, 207)
+
+.show-area
+  width: 65rem
+  margin: auto
+  margin-top: 5rem
+
+.main-body
+  margin-top: 1rem
+
+.blog-title
+  margin: 0 
+
+.blog-desc
+  margin-bottom: 1rem
+  font-weight: normal
+
+.posts-header
+  margin: 1rem 0 
+
+.post-list
+  list-style: none
+
+.post-list-child
+  font-size: 1.5rem
+  margin: 1rem 0
+  display: flex
+  justify-content: space-between
+  font-family: 'Noto Sans SC', sans-serif
+
+.post-list-child a
+  text-decoration: none
+  color: #000
+
+.post-list-child a&:visited
+  color: #000
+
+.post-list-child a&:hover
+  color: rgb(45, 136, 233)
+
+.article-header
+  margin-bottom: 2rem
+
+.article-details
+  margin-top: 3rem
+  display: flex
+  font-size: 1.2rem
+  justify-content: space-between
+
+.article-details a
+  text-decoration: none
+
+.catalogs-container
+  position: sticky
+  top: 0
+  z-index: 999
+  pointer-events: none
+
+.cata-fold-switch-container
+  display: flex
+  flex-direction: row-reverse
+.cata-fold-switch
+  width: 5rem
+  height: 5rem
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: #fff
+  pointer-events: auto
+.cata-fold-switch i
+  cursor: pointer
+
+.toc-item::marker
+  content: none
+
+.toc
+  position: relative
+  pointer-events: auto
+
+.toc-container
+  overflow: hidden
+  transition: 0.25s
+  background-color: #fff
+
+.toc a
+  text-decoration: none
+  font-size: 1.4rem
+
+.toc-child
+  position: relative
+  left: 2rem
+
+a[class^='tag-']
+  text-decoration: none
+  padding: 0.25rem
+
+.page-title
+  margin-bottom: 2rem
+
+.category-list-item::marker
+  content: none
+
+.category-list-item
+  display: flex
+  justify-content: space-between
+  margin-bottom: 0.5rem
+
+.category-list-link
+  font-size: 1.6rem
+  text-decoration: none
+
+.category-list-count
+  font-size: 1.6rem
+  font-family: 'Noto Sans SC', sans-serif
+
+@import '../_partial/header.styl'
+@import '../_partial/article.styl'

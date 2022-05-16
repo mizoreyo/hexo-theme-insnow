@@ -1,0 +1,20 @@
+<head>
+  <meta charset="utf-8">
+  <% var title=page.title %>
+  <title>
+    <% if (title){ %>
+    <%= title %>
+    <% } else { %>
+    <%= config.title %>
+    <% } %>
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <%- js('scripts/theme-switch.js') %>
+  <%- js('https://cdn.jsdelivr.net/npm/prismjs@1.17.1/prism.min.js') %>
+  <%- js('https://cdn.jsdelivr.net/npm/prismjs@1.17.1/plugins/line-numbers/prism-line-numbers.min.js') %>
+  <%- css('https://cdn.jsdelivr.net/npm/prismjs@1.17.1/plugins/line-numbers/prism-line-numbers.css') %>
+  <%- css('css/prism/material-light.css') %>
+  <%- css('css/style') %>
+  <%- css('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Noto+Sans+SC:wght@300&display=swap') %>
+  <%- css('//at.alicdn.com/t/font_3386819_3xna2gls51c.css') %>
+</head>

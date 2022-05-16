@@ -1,0 +1,18 @@
+<main class="main-body">
+  <h2 class="page-title">收藏</h2>
+  <ul class="post-list">
+    <% theme.collection.map(function(articleInfo) {%>
+    <li class="post-list-child">
+      <span>
+        <span>👍</span>
+        <a href="<%=articleInfo.link%>"><%= articleInfo.title %></a>
+      </span>
+      <span>
+        <%= articleInfo.author %>
+      </span>
+    </li>
+    <% }) %>
+  </ul>
+</main>
+
+</ul>
