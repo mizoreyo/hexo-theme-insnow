@@ -63,6 +63,42 @@ html
 .article-details a
   text-decoration: none
 
+.toc-container
+  position: sticky
+  top: 0
+  z-index: 999
+  pointer-events: none
+
+.toc-container summary::marker
+  content: none
+
+.toc-container summary
+  width: 5rem
+  height: 5rem
+  text-align: center
+  line-height: 5rem
+  margin-left: 60rem
+  background-color: #fff
+
+.toc-item::marker
+  content: none
+
+.toc-child
+  position: relative
+  left: 2rem
+
+.toc a
+  text-decoration: none
+  font-size: 1.4rem
+  pointer-events: all
+
+.toc
+  background-color: #fff
+
+summary i
+  cursor: pointer
+  pointer-events: all
+
 a[class^='tag-']
   text-decoration: none
   padding: 0.25rem

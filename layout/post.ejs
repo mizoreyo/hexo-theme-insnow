@@ -1,5 +1,20 @@
 <main class="main-body">
-
+  <details class="toc-container">
+    <summary id="summary">
+      <i class="iconfont icon-liebiao-01"></i>
+    </summary>
+    <%- toc(page.content) %>
+    <div style="height: 1rem;background-color: #fff;"></div>
+  </details>
+  <script>
+    function fold() {
+      document.getElementsByClassName('toc-container')[0].removeAttribute('open')
+    }
+    const tocLinks = document.getElementsByClassName('toc-link')
+    Array.prototype.forEach.call(tocLinks, (tocLink) => {
+      tocLink.onclick = fold
+    })
+  </script>
   <div class="article-header">
     <h1 class="article-title"><%- page.title %></h1>
     <div class="article-details">
