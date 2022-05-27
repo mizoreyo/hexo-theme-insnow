@@ -77,19 +77,23 @@ html
   content: none
 
 .toc-container summary
+  width: 100%
+  height: 5rem
+  display: flex
+  flex-direction: row-reverse
+
+.summary-button
   width: 5rem
   height: 5rem
-  text-align: center
   line-height: 5rem
-  margin-left: 60rem
   background-color: #fff
+  text-align: center
 
 .toc-item::marker
   content: none
 
 .toc-child
-  position: relative
-  left: 2rem
+  padding-inline-start: 2rem
 
 .toc a
   text-decoration: none
@@ -130,3 +134,4 @@ a[class^='tag-']
 @import '../_partial/header.styl'
 @import '../_partial/article.styl'
 
+@import './adapt.styl';
