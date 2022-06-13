@@ -52,6 +52,43 @@ html
 .post-list-child a&:hover
   color: rgb(45, 136, 233)
 
+.toc-container
+  width: 100%
+  position: sticky
+  top: 0
+  z-index: 999
+  pointer-events: none
+
+.toc-toggle
+  margin-left: auto
+  width: 5rem
+  height: 5rem
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #fff
+
+.toc-toggle i
+  cursor: pointer
+  pointer-events: auto
+
+.toc
+  display: none
+  list-style: none
+  background-color: #fff
+  pointer-events: auto
+
+.show
+  display: block
+
+.toc-child
+  list-style: none
+  padding-inline-start: 2rem
+
+.toc a
+  text-decoration: none
+  font-size: 1.4rem
+
 .article-header
   margin-bottom: 2rem
 
@@ -90,6 +127,20 @@ a[class^='tag-']
   font-size: 1.6rem
   font-family: 'Noto Sans SC', sans-serif
 
+footer
+  display: flex
+  justify-content: center
+  padding: 2rem 0
+
+.footer-info
+  font-family: 'Noto Sans SC', sans-serif;
+
+.footer-info a
+  text-decoration: none
+  color: rgb(87, 87, 87)
+
+.footer-info a:hover
+  color: rgb(0, 166, 255)
 
 @import '../_partial/header.styl'
 @import '../_partial/article.styl'

@@ -1,4 +1,22 @@
 <main class="main-body">
+  <div class="toc-container">
+    <div class="toc-toggle" onclick="toggleShow()">
+      <i class="iconfont icon-liebiao-01"></i>
+    </div>
+    <%- toc(page.content) %>
+  </div>
+  <script>
+    var show = false
+    function toggleShow() {
+      if (show) {
+        document.getElementsByClassName('toc')[0].className = 'toc'
+      } else {
+        document.getElementsByClassName('toc')[0].className = 'toc show'
+      }
+      show = !show
+    }
+    document.getElementsByClassName('toc')[0].onclick = toggleShow
+  </script>
   <div class="article-header">
     <h1 class="article-title"><%- page.title %></h1>
     <div class="article-details">
