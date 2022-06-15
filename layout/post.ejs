@@ -1,7 +1,7 @@
 <main class="main-body">
   <div class="toc-container">
-    <div class="toc-toggle" onclick="toggleShow()">
-      <i class="iconfont icon-liebiao-01"></i>
+    <div class="toc-toggle">
+      <i id="toc-b-icon" class="iconfont icon-liebiao-01" onclick="toggleShow()"></i>
     </div>
     <%- toc(page.content) %>
   </div>
@@ -10,8 +10,10 @@
     function toggleShow() {
       if (show) {
         document.getElementsByClassName('toc')[0].className = 'toc'
+        document.getElementById('toc-b-icon').className = 'iconfont icon-liebiao-01'
       } else {
         document.getElementsByClassName('toc')[0].className = 'toc show'
+        document.getElementById('toc-b-icon').className = 'iconfont icon-quxiao-01'
       }
       show = !show
     }

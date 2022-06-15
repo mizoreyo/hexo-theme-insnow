@@ -5,8 +5,8 @@ header
   align-items: center
   position: sticky
   top: 0
-  background-color: #fff
-  box-shadow: 0 -1px #fff;
+  background-color: var(--bgColor)
+  box-shadow: 0 -1px var(--bgColor);
   z-index: 998
 
 .nav 
@@ -21,12 +21,12 @@ header
   font-family: 'Noto Sans SC', sans-serif
 
 .nav-child a
-  color: #000
+  color: var(--fontColor)
   text-decoration: none
 .nav-child a:visited
-  color: #000
+  color: var(--fontColor)
 .nav-child a:hover
-  color: rgb(45, 136, 233)
+  color: var(--linkColor)
 
 
 .theme-switcher
@@ -37,3 +37,4 @@ header
   line-height: 4.6rem
   justify-content: center
   cursor: pointer
+  overflow: hidden

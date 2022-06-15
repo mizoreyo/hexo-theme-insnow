@@ -1,6 +1,21 @@
+.dark
+  --bgColor: #181818
+  --fontColor: silver
+  --bgColor2: #2b2b2b
+  --linkColor: #2d88e9
+  --bgColor3: #292929
+
+.light
+  --bgColor: #fff
+  --fontColor: #000
+  --bgColor2: #fafafa
+  --linkColor: #2d88e9
+  --bgColor3: #e8e8e8
+
 html
   font-size: 62.5%
   -webkit-text-size-adjust: none;
+  background-color: var(--bgColor)
 
 * 
   margin: 0
@@ -10,9 +25,7 @@ html
   border: none
 
 .main-body a
-  color: rgb(45, 136, 233)
-.main-body a:active
-  color: rgb(19, 110, 207)
+  color: var(--linkColor)
 
 .show-area
   width: 65rem
@@ -46,16 +59,18 @@ html
   display: flex
   justify-content: center
   align-items: center
-  background-color: #fff
+  background-color: var(--bgColor)
+  pointer-events: auto
 
 .toc-toggle i
   cursor: pointer
   pointer-events: auto
+  color: var(--fontColor)
 
 .toc
   display: none
   list-style: none
-  background-color: #fff
+  background-color: var(--bgColor)
   pointer-events: auto
 
 .show
@@ -80,6 +95,7 @@ html
 
 .article-post-date
   font-family: 'Noto Sans SC', sans-serif
+  color: var(--fontColor)
 
 .article-details a
   text-decoration: none
@@ -106,6 +122,7 @@ a[class^='tag-']
 .category-list-count
   font-size: 1.6rem
   font-family: 'Noto Sans SC', sans-serif
+  color: var(--fontColor)
 
 footer
   display: flex
@@ -114,13 +131,30 @@ footer
 
 .footer-info
   font-family: 'Noto Sans SC', sans-serif;
+  color: var(--fontColor)
 
 .footer-info a
   text-decoration: none
-  color: rgb(87, 87, 87)
+  color: var(--fontColor)
 
 .footer-info a:hover
-  color: rgb(0, 166, 255)
+  color: var(--linkColor)
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.7);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(128, 128, 128, 0.2);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: rgb(128, 128, 128);
+}
 
 @import '../_partial/header.styl'
 @import '../_partial/article.styl'
