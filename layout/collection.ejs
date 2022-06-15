@@ -3,13 +3,13 @@
   <ul class="post-list">
     <% theme.collection.map(function(articleInfo) {%>
     <li class="post-list-child">
-      <span>
-        <span>👍</span>
+      <div class="post-list-left">
+        <div class="post-list-symbol">👍</div>
         <a href="<%=articleInfo.link%>"><%= articleInfo.title %></a>
-      </span>
-      <span>
+      </div>
+      <div class="post-list-author">
         <%= articleInfo.author %>
-      </span>
+      </div>
     </li>
     <% }) %>
   </ul>

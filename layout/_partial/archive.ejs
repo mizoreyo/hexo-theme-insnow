@@ -1,11 +1,11 @@
 <ul class="post-list">
   <% page.posts.each(function(post){ %>
   <li class="post-list-child">
-    <span>
-      <span>🚩</span>
+    <div class="post-list-left">
+      <div class="post-list-symbol">🚩</div>
       <a href="/<%=post.path%>"><%= post.title %></a>
-    </span>
-    <span>
+    </div>
+    <span class="post-list-date">
       <%= post.date.format('YYYY-MM-DD') %>
     </span>
   </li>
