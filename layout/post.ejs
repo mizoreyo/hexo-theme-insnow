@@ -25,7 +25,7 @@
       <div class="article-post-date"><span>Posted at </span> <%- page.date.format('YYYY-MM-DD') %></div>
       <div class="article-tags">
         <% page.tags.each(function(tag){ %>
-        <a href="#">#<%= tag.name %></a>
+        <a href="/tags/<%= tag.name %>">#<%= tag.name %></a>
         <% }) %>
       </div>
     </div>
