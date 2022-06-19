@@ -16,6 +16,17 @@ html
   font-size: 62.5%
   -webkit-text-size-adjust: none;
 
+@keyframes main-up {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 body
   background-color: var(--bgColor)
   transition-property: background-color,color
@@ -37,7 +48,10 @@ body
   margin-top: 5rem
 
 .main-body
-  margin-top: 1rem
+  margin-top: 1rem;
+  animation-name: main-up
+  animation-duration: 0.5s
+  animation-timing-function: ease-out
 
 .blog-title
   margin: 0 
