@@ -80,6 +80,7 @@ ol p
   font-size: 1.5rem
   line-height: 2.5rem
   color: var(--fontColor)
+  transition: color 0.5s
 
 .article>blockquote
   padding-right: 2rem
@@ -135,6 +136,9 @@ th:not(:last-child)::before
   transform: translateY(-50%)
   transition: background-color .5s
   content: "";
+
+del,u
+  transition: text-decoration 0.5s
 
 hr
   height: 1px
