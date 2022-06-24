@@ -83,14 +83,15 @@ body
   justify-content: center
   align-items: center
   background-color: var(--bgColor)
-  pointer-events: auto
-  transition-property: background-color,color
+  // pointer-events: auto
+  transition-property: background-color
   transition-duration: 0.5s
 
 .toc-toggle i
   cursor: pointer
   pointer-events: auto
   color: var(--fontColor)
+  transition: color 0.5s
 
 .toc
   display: none
@@ -126,6 +127,7 @@ body
 .article-post-date
   font-family: 'Noto Sans SC', sans-serif
   color: var(--fontColor)
+  transition: color 0.5s
 
 .article-details a
   text-decoration: none
@@ -162,6 +164,7 @@ footer
 .footer-info
   font-family: 'Noto Sans SC', sans-serif;
   color: var(--fontColor)
+  transition: color 0.5s
 
 .footer-info a
   text-decoration: none
