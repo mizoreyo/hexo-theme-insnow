@@ -35,7 +35,7 @@ p
   margin: 1rem 0
 p>code 
   background-color: var(--bgColor2)
-  color: rgb(227, 67, 67)
+  color: var(--spColor)
   font-family: monospace !important;
 
 h1,h2,h3,h4,h5,h6,p,a
@@ -78,12 +78,15 @@ ol p
   line-height: 2.5rem
   color: var(--fontColor)
 
+.article>blockquote
+  padding-right: 2rem
+
 blockquote
   background-color: var(--bgColor2)
   padding-inline-start: 2rem
   padding-top: 0.5rem
   padding-bottom: 0.5rem
-  border-left: 2px solid var(--linkColor)
+  border-left: 2px solid var(--spColor)
   margin: 1rem 0
   transition-property: background-color,color
   transition-duration: 0.5s
