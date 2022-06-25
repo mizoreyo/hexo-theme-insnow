@@ -5,6 +5,7 @@
     </div>
     <%- toc(page.content) %>
   </div>
+  <% if(toc(page.content)!=='') { %>
   <script>
     var show = false
     function toggleShow() {
@@ -19,6 +20,19 @@
     }
     document.getElementsByClassName('toc')[0].onclick = toggleShow
   </script>
+  <% } else { %>
+  <script>
+    var show = false
+    function toggleShow() {
+      if (show) {
+        document.getElementById('toc-b-icon').className = 'iconfont icon-liebiao-01'
+      } else {
+        document.getElementById('toc-b-icon').className = 'iconfont icon-quxiao-01'
+      }
+      show = !show
+    }
+  </script>
+  <% } %>
   <div class="article-header">
     <h1 class="article-title"><%- page.title %></h1>
     <div class="article-details">
