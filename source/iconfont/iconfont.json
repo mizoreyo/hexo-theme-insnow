@@ -1,0 +1,51 @@
+{
+  "id": "3386819",
+  "name": "hexo-theme-insnow",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "9512708",
+      "name": "微信",
+      "font_class": "wechat",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "8474295",
+      "name": "mail",
+      "font_class": "mail",
+      "unicode": "e6bf",
+      "unicode_decimal": 59071
+    },
+    {
+      "icon_id": "4937000",
+      "name": "github-fill",
+      "font_class": "github-fill",
+      "unicode": "e885",
+      "unicode_decimal": 59525
+    },
+    {
+      "icon_id": "8474349",
+      "name": "rss",
+      "font_class": "rss",
+      "unicode": "e6d0",
+      "unicode_decimal": 59088
+    },
+    {
+      "icon_id": "29548266",
+      "name": "列表",
+      "font_class": "liebiao-01",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "29548268",
+      "name": "取消",
+      "font_class": "quxiao-01",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    }
+  ]
+}
