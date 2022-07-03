@@ -2,15 +2,20 @@ collection:
   - title: 用 WSL2 在 Windows 上搭建 Linux 开发环境
     link: https://xjj.pub
     author: XJJ
+    site: https://xjj.pub
   - title: 用 TensorFlow 的 Dataset API 构建输入流水线
     link: https://aye.ink
     author: Aye
+    site: https://aye.ink
   - title: 一个用于展示个人项目的网页生成器
     link: https://aye.ink
     author: XJJ
+    site: https://xjj.pub
   - title: 华为Watch GT2 Pro使用体验——年轻人的第一块智能手表
     link: https://aye.ink
     author: Mizore Aye
+    site: https://aye.ink
   - title: C# Learning Based On The Book illustrated C#7(Fifth Edition)
     link: https://aye.ink
     author: 雨夹雪和他的小伙伴
+    site: https://mizore.site
