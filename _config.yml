@@ -1,2 +1,11 @@
-
+#收藏页面配置
+collection:
+  - title: 怎么和最喜欢的人在一起？
+    link: https://xjj.pub/idea/e/
+    author: XJJ
+    site: https://xjj.pub
+  - title: 十大经典排序算法总结
+    link: https://javaguide.cn/cs-basics/algorithms/10-classical-sorting-algorithms.html
+    author: JavaGuide
+    site: https://javaguide.cn/
   
