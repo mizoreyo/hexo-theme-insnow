@@ -7,20 +7,24 @@
   display: flex
   justify-content: space-between
   font-family: 'Noto Sans SC', sans-serif
+  text-align: justify
 
 .post-list-left
   display: flex
+  height: 2.16rem
+  flex-shrink: 1
+  width: calc(100% - 11rem)
 
 .post-list-symbol
   width: 3rem
   flex-shrink: 0
 
-.post-list-child
-  text-align: justify
-
 .post-list-child a
   text-decoration: none
   color: var(--fontColor)
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
 
 .post-list-child a&:visited
   color: var(--fontColor)
@@ -37,9 +41,8 @@
 
 .post-list-author
   padding-left: 2rem
-  font-size: 1.5rem
   flex-shrink: 0
-  width: 10rem
+  width: 11rem
   height: 2.16rem
   overflow: hidden;
   color: var(--fontColor)
