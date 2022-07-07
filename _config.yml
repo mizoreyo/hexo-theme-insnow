@@ -1,9 +1,10 @@
-#收藏页面配置
+# footer链接配置
 footer:
   github: https://github.com/mizoreyo
   wechat: https://cdn.jsdelivr.net/gh/mizoreyo/static/images/wechat.PNG
   mail: mailto:mizoreyo@outlook.com
   rss: /atom.xml
+# 收藏页面配置
 collection:
   - title: 怎么和最喜欢的人在一起？
     link: https://xjj.pub/idea/e/
