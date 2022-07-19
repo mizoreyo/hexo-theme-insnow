@@ -17,6 +17,7 @@
 html
   font-size: 62.5%
   -webkit-text-size-adjust: none;
+  --global-font-family: 'HarmonyOS Sans SC','Noto Sans SC', sans-serif
 
 @keyframes main-up {
   from {
@@ -128,7 +129,7 @@ body
   justify-content: space-between
 
 .article-post-date
-  font-family: 'Noto Sans SC', sans-serif
+  font-family: var(--global-font-family)
   color: var(--fontColor)
   transition: color 0.5s
 
@@ -156,7 +157,7 @@ a[class^='tag-']
 
 .category-list-count
   font-size: 1.6rem
-  font-family: 'Noto Sans SC', sans-serif
+  font-family: var(--global-font-family)
   color: var(--fontColor)
 
 .tag-cloud-container
@@ -169,7 +170,7 @@ footer
   font-size: 1.3rem 
 
 .footer-info
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: var(--global-font-family)
   color: var(--fontColor)
   transition: color 0.5s
   padding: 0.5rem 0
@@ -207,3 +208,4 @@ footer
 @import '../_partial/article.styl'
 @import '../_partial/archive.styl'
 @import './adapt.styl';
+@import './font.styl';

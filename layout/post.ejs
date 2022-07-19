@@ -1,4 +1,6 @@
 <main class="main-body">
+  <%- js('/o3o/O3O.js') %>
+  <%- css('/o3o/O3O.css')  %>
   <div class="toc-container">
     <div class="toc-toggle">
       <i id="toc-b-icon" class="iconfont icon-liebiao-01" onclick="toggleShow()"></i>
@@ -45,4 +47,8 @@
     </div>
   </div>
   <%- partial('_partial/article') %>
+  <script>
+    new O3O({ key: "mizore", api: "http://106.14.6.245:8080" }).init()
+  </script>
+  <%- css('/css/o3o.css') %>
 </main>
