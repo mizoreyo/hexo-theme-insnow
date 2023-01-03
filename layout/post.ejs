@@ -1,6 +1,4 @@
 <main class="main-body">
-  <%- js('/o3o/O3O.js') %>
-  <%- css('/o3o/O3O.css')  %>
   <div class="toc-container">
     <div class="toc-toggle">
       <i id="toc-b-icon" class="iconfont icon-liebiao-01" onclick="toggleShow()"></i>
@@ -47,8 +45,6 @@
     </div>
   </div>
   <%- partial('_partial/article') %>
-  <script>
-    new O3O({ key: "mizore", api: "https://o3o.mizore.site:2333" }).init()
-  </script>
-  <%- css('/css/o3o') %>
+  <o3o key="mizore" api="https://o3o.mizore.site:2333"></o3o>
+  <%- js('/o3o/o3o.js') %>
 </main>
