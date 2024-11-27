@@ -15,7 +15,7 @@
         <% if (i === page.current) { %>
             <span class="current"><%= i %></span>
         <% } else { %>
-            <a href="/page/<%= i %>"><%= i %></a>
+            <a href="/<%= i > 1 ? 'page/' + i : '' %>"><%= i %></a>
         <% } %>
     <% } %>
     <% if (endPage < page.total) { %>
