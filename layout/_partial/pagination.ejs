@@ -1,0 +1,29 @@
+<div class="pagination">
+  <a href="/<%= page.prev_link %>">上一页</a>
+  <div>
+    <% 
+    const pageRange = 2;
+    const startPage = Math.max(1, page.current - pageRange);
+    const endPage = Math.min(page.total, page.current + pageRange);
+    if (startPage > 1) { %>
+        <a href="/">1</a>
+        <% if (startPage > 2) { %>
+            <span class="ellipsis">...</span>
+        <% } %>
+    <% } %>
+    <% for (let i = startPage; i <= endPage; i++) { %>
+        <% if (i === page.current) { %>
+            <span class="current"><%= i %></span>
+        <% } else { %>
+            <a href="/page/<%= i %>"><%= i %></a>
+        <% } %>
+    <% } %>
+    <% if (endPage < page.total) { %>
+        <% if (endPage < page.total - 1) { %>
+            <span class="ellipsis">...</span>
+        <% } %>
+        <a href="/page/<%= page.total %>"><%= page.total %></a>
+    <% } %>
+  </div>
+  <a href="/<%= page.next_link %>">下一页</a>
+</div>
